@@ -32,7 +32,6 @@ do
 echo 'Cloning "'$i'" ...'
     :
     hg clone -b 3.4 https://bitbucket.org/tryton/$i $i
-    echo $i
 done
 
 
@@ -47,7 +46,6 @@ do
 echo 'Cloning "'$i'" ...'
     :
     hg clone https://bitbucket.org/nodux/$i $i
-    echo $i
 done
 
 
@@ -75,5 +73,4 @@ do
 echo 'Cloning "'$i'" ...'
     :
     hg clone -b 3.4 https://bitbucket.org/zikzakmedia/trytond-$i $i
-    echo $i
 done
