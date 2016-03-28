@@ -29,7 +29,7 @@ modulos_core=(
 
 for i in "${modulos_core[@]}"
 do
-echo 'Cloning "'$i'" ...'
+echo 'Cloning "'$i'" module ...'
     :
     hg clone -b 3.4 https://bitbucket.org/tryton/$i $i
 done
@@ -43,7 +43,7 @@ modulos_nodux=(
 
 for i in "${modulos_nodux[@]}"
 do
-echo 'Cloning "'$i'" ...'
+echo 'Cloning "'$i'" module ...'
     :
     hg clone https://bitbucket.org/nodux/$i $i
 done
@@ -55,7 +55,7 @@ modulos_trytonspain=(
 
 for i in "${modulos_trytonspain[@]}"
 do
-echo 'Cloning "'$i'" ...'
+echo 'Cloning "'$i'" module ...'
     :
     hg clone -b 3.4 https://bitbucket.org/trytonspain/trytond-$i $i
 done
@@ -70,7 +70,7 @@ modulos_zikzakmedia=(
 
 for i in "${modulos_zikzakmedia[@]}"
 do
-echo 'Cloning "'$i'" ...'
+echo 'Cloning "'$i'" module ...'
     :
     hg clone -b 3.4 https://bitbucket.org/zikzakmedia/trytond-$i $i
 done
