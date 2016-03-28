@@ -2,7 +2,8 @@
 
 # NODUX: Needed modules for pymes
 
-# Modulos Core: 21 modulos
+
+# Core modules: 21 modules
 modulos_core=(
     'account' \
     'account_invoice' \
@@ -28,32 +29,41 @@ modulos_core=(
 
 for i in "${modulos_core[@]}"
 do
-   :
-   hg clone -b 3.4 https://bitbucket.org/tryton/$i $i
+echo 'Cloning "'$i'" ...'
+    :
+    hg clone -b 3.4 https://bitbucket.org/tryton/$i $i
+    echo $i
 done
 
-# Modulos Nodux: 3 modulos
+
+# Nodux modules: 3 modules
 modulos_nodux=(
     'nodux_account_ec_pymes' \
     'nodux_account_niif_ec' \
-    'nodux_sale_payment' \
+    'nodux_sale_payment')
 
 for i in "${modulos_nodux[@]}"
 do
-   :
-   hg clone https://bitbucket.org/nodux/$i $i
+echo 'Cloning "'$i'" ...'
+    :
+    hg clone https://bitbucket.org/nodux/$i $i
+    echo $i
 done
 
-# Modulos Trytonspain: 1 modulo
-modulos_trytonspain=('sale_payment')
+
+# Trytonspain modules: 1 module
+modulos_trytonspain=(
+    'sale_payment')
 
 for i in "${modulos_trytonspain[@]}"
 do
-   :
-   hg clone -b 3.4 https://bitbucket.org/trytonspain/trytond-$i $i
+echo 'Cloning "'$i'" ...'
+    :
+    hg clone -b 3.4 https://bitbucket.org/trytonspain/trytond-$i $i
 done
 
-# Modulos Zikzakmedia: 4 modulos
+
+# Zikzakmedia modules: 4 modules
 modulos_zikzakmedia=(
     'sale_pos' \
     'sale_product_stock' \
@@ -62,6 +72,8 @@ modulos_zikzakmedia=(
 
 for i in "${modulos_zikzakmedia[@]}"
 do
-   :
-   hg clone -b 3.4 https://bitbucket.org/zikzakmedia/trytond-$i $i
+echo 'Cloning "'$i'" ...'
+    :
+    hg clone -b 3.4 https://bitbucket.org/zikzakmedia/trytond-$i $i
+    echo $i
 done

@@ -2,6 +2,7 @@
 
 # NODUX: Needed modules for companies with Electronic Invoice
 
+
 # Core modules: 26 modules
 modulos_core=(
     'account' \
@@ -33,9 +34,11 @@ modulos_core=(
 
 for i in "${modulos_core[@]}"
 do
+echo 'Cloning "'$i'" ...'
    :
    hg clone -b 3.4 https://bitbucket.org/tryton/$i $i
 done
+
 
 # Nodux modules: 8 modules
 modulos_nodux=(
@@ -46,13 +49,16 @@ modulos_nodux=(
     'nodux_sale_payment' \
     'nodux_sale_pos_discount' \
     'nodux_sale_pos_electronic_invoice_ec' \
-    'nodux_stock_remission_guide')
+    'nodux_stock_remission_guide' \
+    'nodux_sale_payment_term')
 
 for i in "${modulos_nodux[@]}"
 do
+echo 'Cloning "'$i'" ...'
    :
    hg clone https://bitbucket.org/nodux/$i $i
 done
+
 
 # Trytonspain modules: 3 modules
 modulos_trytonspain=(
@@ -62,9 +68,11 @@ modulos_trytonspain=(
 
 for i in "${modulos_trytonspain[@]}"
 do
+echo 'Cloning "'$i'" ...'
    :
    hg clone -b 3.4 https://bitbucket.org/trytonspain/trytond-$i $i
 done
+
 
 # Zikzakmedia modules: 5 modules
 modulos_zikzakmedia=(
@@ -76,6 +84,7 @@ modulos_zikzakmedia=(
 
 for i in "${modulos_zikzakmedia[@]}"
 do
+echo 'Cloning "'$i'" ...'
    :
    hg clone -b 3.4 https://bitbucket.org/zikzakmedia/trytond-$i $i
 done
