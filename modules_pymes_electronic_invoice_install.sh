@@ -35,12 +35,14 @@ echo 'Cloning "'$i'" module ...'
     hg clone -b 3.4 https://bitbucket.org/tryton/$i $i
 done
 
-# Nodux modules: 6 modules
+# Nodux modules: 8 modules
 modulos_nodux=(
     'nodux_account_ec_pymes' \
     'nodux_account_electronic_invoice_ec' \
     'nodux_account_niif_ec' \
+    'nodux_party_ec' \
     'nodux_sale_payment' \
+    'nodux_sale_pos' \
     'nodux_sale_pos_electronic_invoice_ec' \
     'nodux_stock_remission_guide')
 

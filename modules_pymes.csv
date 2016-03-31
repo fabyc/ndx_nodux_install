@@ -13,8 +13,11 @@ country,core
 currency,core
 dashboard,core
 nodux_account_ec_pymes,nodux
+nodux_account_invoice_multisequence,nodux
 nodux_account_niif_ec,nodux
+nodux_party_ec,nodux
 nodux_sale_payment,nodux
+nodux_sale_pos,nodux
 party,core
 product,core
 product_cost_history,core
