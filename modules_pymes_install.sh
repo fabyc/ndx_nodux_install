@@ -35,11 +35,12 @@ echo 'Cloning "'$i'" module ...'
 done
 
 
-# Nodux modules: 6 modules
+# Nodux modules: 7 modules
 modulos_nodux=(
     'nodux_account_ec_pymes' \
     'nodux_account_invoice_multisequence' \
     'nodux_account_niif_ec' \
+    'nodux_account_statement' \
     'nodux_party_ec' \
     'nodux_sale_payment' \
     'nodux_sale_pos')

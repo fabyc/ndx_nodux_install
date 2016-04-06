@@ -22,6 +22,7 @@ nodux_account_ec,nodux
 nodux_account_electronic_invoice_ec,nodux
 nodux_account_invoice_multisequence,nodux
 nodux_account_niif_ec,nodux
+nodux_account_statemet,nodux
 nodux_account_voucher_ec,nodux
 nodux_account_withholding_ec,nodux
 nodux_party_ec,nodux
