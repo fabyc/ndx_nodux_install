@@ -1,38 +1,45 @@
-TONERS CATAMAYO WITH ELECTRONIC INVOICE,
-,
-MODULO,COMPANY
-account,core
-account_credit_limit,core
-account_invoice,core
-account_invoice_history,core
-account_invoice_stock,core
-account_product,core
-account_statement,core
-bank,core
-carrier,core
-company,core
-country,core
-currency,core
-dashboard,core
-nodux_account_ec_pymes,nodux
-nodux_account_electronic_invoice_ec,nodux
-nodux_account_niif_ec,nodux
-nodux_sale_payment,nodux
-nodux_sale_pos_electronic_invoice_ec,nodux
-nodux_stock_remission_guide,nodux
-party,core
-product,core
-product_cost_history,core
-product_price_list,core
-purchase,core
-sale,core
-sale_credit_limit,core
-sale_invoice_grouping,core
-sale_payment,trytonspain
-sale_pos,zikzakmedia
-sale_price_list,core
-sale_product_stock,zikzakmedia
-sale_product_stock_shop,zikzakmedia
-sale_shop,zikzakmedia
-stock,core
-stock_supply,core
+TONERS CATAMAYO WITH ELECTRONIC INVOICE,,
+Los módulos correspondientes a facturación electrónica sólo están copiados en la instancia pero no instalados,,
+MODULE,COMPANY,
+account,core,
+account_invoice,core,
+account_invoice_discount,trytonspain,
+account_invoice_history,core,Está copiado en instancia pero sin instalar aún
+account_invoice_stock,core,
+account_product,core,
+account_statement,core,
+bank,core,
+carrier,core,Está copiado en instancia pero sin instalar porque es necesario para facturación electrónica
+company,core,
+country,core,
+currency,core,
+dashboard,core,
+nodux_account_ec_pymes,nodux,
+nodux_account_electronic_invoice_ec,nodux,Está copiado en instancia pero sin instalar aún
+nodux_account_invoice_multisequence,nodux,
+nodux_account_niif_ec,nodux,
+nodux_account_statement,nodux,
+nodux_account_voucher_ec,nodux,
+nodux_party_ec,nodux,
+nodux_sale_payment,nodux,
+nodux_sale_pos,nodux,
+nodux_sale_pos_discount,nodux,
+nodux_sale_pos_electronic_invoice_ec,nodux,Está copiado en instancia pero sin instalar
+nodux_stock_remission_guide,nodux,Instalado pero sólo es necesario para la facturación electrónica
+party,core,
+product,core,
+product_cost_history,core,
+product_price_list,core,
+purchase,core,
+sale,core,
+sale_discount,trytonspain,
+sale_invoice_grouping,core,
+sale_payment,trytonspain,
+sale_pos,zikzakmedia,
+sale_pos_discount,zikzakmedia,
+sale_price_list,core,
+sale_product_stock,zikzakmedia,
+sale_product_stock_shop,zikzakmedia,
+sale_shop,zikzakmedia,
+stock,core,
+stock_supply,core,
