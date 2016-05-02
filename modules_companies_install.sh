@@ -3,12 +3,12 @@
 # NODUX: Needed modules for companies with Electronic Invoice
 
 
-# Core modules: 26 modules
+# Core modules: 24 modules
 modulos_core=(
     'account' \
     'account_credit_limit' \
     'account_invoice' \
-    'account_invoice_history' \
+    #'account_invoice_history' \
     'account_invoice_stock' \
     'account_product' \
     'account_statement' \
@@ -17,7 +17,7 @@ modulos_core=(
     'company' \
     'country' \
     'currency' \
-    'dashboard' \
+    #'dashboard' \
     'party' \
     'product' \
     'product_cost_history' \
@@ -55,12 +55,12 @@ modulos_nodux=(
     'nodux_party_ec' \
     'nodux_purchase_default_warehouse' \
     'nodux_sale_payment' \
+    'nodux_sale_payment_term' \
     'nodux_sale_pos' \
     'nodux_sale_pos_discount' \
     'nodux_sale_pos_electronic_invoice_ec' \
     'nodux_sale_pos_warehouse' \
-    'nodux_stock_remission_guide' \
-    'nodux_sale_payment_term')
+    'nodux_stock_remission_guide')
 
 for i in "${modulos_nodux[@]}"
 do

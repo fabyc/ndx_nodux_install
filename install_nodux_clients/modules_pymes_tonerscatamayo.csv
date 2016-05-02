@@ -13,7 +13,7 @@ carrier,core,Está copiado en instancia pero sin instalar porque es necesario pa
 company,core,
 country,core,
 currency,core,
-dashboard,core,
+dashboard,core,Está copiado en instancia pero sin instalar aún
 nodux_account_ec_pymes,nodux,
 nodux_account_electronic_invoice_ec,nodux,Está copiado en instancia pero sin instalar aún
 nodux_account_invoice_multisequence,nodux,
