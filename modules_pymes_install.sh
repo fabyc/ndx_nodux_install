@@ -7,7 +7,6 @@
 modulos_core=(
     'account' \
     'account_invoice' \
-    'account_invoice_history' \
     'account_invoice_stock' \
     'account_product' \
     'account_statement' \
@@ -35,7 +34,7 @@ echo 'Cloning "'$i'" module ...'
 done
 
 
-# Nodux modules: 7 modules
+# Nodux modules: 8 modules
 modulos_nodux=(
     'nodux_account_ec_pymes' \
     'nodux_account_invoice_multisequence' \
@@ -43,7 +42,8 @@ modulos_nodux=(
     'nodux_account_statement' \
     'nodux_party_ec' \
     'nodux_sale_payment' \
-    'nodux_sale_pos')
+    'nodux_sale_pos' \
+    'nodux_sale_pos_discount')
 
 for i in "${modulos_nodux[@]}"
 do
@@ -53,8 +53,10 @@ echo 'Cloning "'$i'" module ...'
 done
 
 
-# Trytonspain modules: 1 module
+# Trytonspain modules: 3 modules
 modulos_trytonspain=(
+    'account_invoice_discount' \
+    'sale_discount' \
     'sale_payment')
 
 for i in "${modulos_trytonspain[@]}"
@@ -65,9 +67,10 @@ echo 'Cloning "'$i'" module ...'
 done
 
 
-# Zikzakmedia modules: 4 modules
+# Zikzakmedia modules: 5 modules
 modulos_zikzakmedia=(
     'sale_pos' \
+    'sale_pos_discount' \
     'sale_product_stock' \
     'sale_product_stock_shop' \
     'sale_shop')
