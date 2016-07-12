@@ -3,12 +3,12 @@
 # NODUX: Needed modules for pymes with Electronic Invoice
 
 
-# Core modules: 22 modulos
+# Core modules: 20 modules
 modulos_core=(
     'account' \
     'account_invoice' \
-    'account_invoice_history' \
     'account_invoice_stock' \
+    'account_payment' \
     'account_product' \
     'account_statement' \
     'bank' \
@@ -16,7 +16,6 @@ modulos_core=(
     'company' \
     'country' \
     'currency' \
-    'dashboard' \
     'party' \
     'product' \
     'product_cost_history' \
@@ -25,8 +24,7 @@ modulos_core=(
     'sale' \
     'sale_invoice_grouping' \
     'sale_price_list' \
-    'stock' \
-    'stock_supply')
+    'stock')
 
 for i in "${modulos_core[@]}"
 do
@@ -35,29 +33,38 @@ echo 'Cloning "'$i'" module ...'
     hg clone -b 3.4 https://bitbucket.org/tryton/$i $i
 done
 
-# Nodux modules: 10 modules
+
+# Nodux modules: 16 modules
 modulos_nodux=(
     'nodux_account_ec_pymes' \
     'nodux_account_electronic_invoice_ec' \
     'nodux_account_invoice_multisequence' \
-    'nodux_account_niif_ec' \
+    'nodux_account_niif_ec_pymes' \
+    'nodux_account_payment' \
     'nodux_account_statement' \
+    'nodux_account_voucher_ec' \
+    'nodux_account_withholding_out_ec' \
     'nodux_party_ec' \
+    'nodux_product_price_list_percentage' \
+    'nodux_purchase_shipment' \
+    'nodux_reports' \
     'nodux_sale_payment' \
     'nodux_sale_pos' \
-    'nodux_sale_pos_electronic_invoice_ec' \
-    'nodux_stock_remission_guide')
+    'nodux_sale_pos_discount'
+    'nodux_sale_pos_electronic_invoice_ec')
 
 for i in "${modulos_nodux[@]}"
 do
 echo 'Cloning "'$i'" module ...'
     :
-    hg clone https://bitbucket.org/nodux/$i $i
+    hg clone -b 3.4 https://bitbucket.org/nodux/$i $i
 done
 
 
-# Trytonspain modules: 1 module
+# Trytonspain modules: 3 modules
 modulos_trytonspain=(
+    'account_invoice_discount' \
+    'sale_discount' \
     'sale_payment')
 
 for i in "${modulos_trytonspain[@]}"
@@ -68,9 +75,11 @@ echo 'Cloning "'$i'" module ...'
 done
 
 
-# Zikzakmedia modules: 4 modules
+# Zikzakmedia modules: 6 modules
 modulos_zikzakmedia=(
+    'product_price_list_category' \
     'sale_pos' \
+    'sale_pos_discount' \
     'sale_product_stock' \
     'sale_product_stock_shop' \
     'sale_shop')
